@@ -9,6 +9,7 @@
     .errormsg { 
       font-family: Lemon;
       color:red;
+      display:none;
     } 
     </style>
     
@@ -25,7 +26,7 @@
         nameError.style.display = 'none';
         filledName = true;
       }
-      if (name.value == '') {
+      else if (name.value == '') {
         nameError.style.display = 'block';
         filledName = false;
       }
@@ -33,7 +34,7 @@
         addressError.style.display = 'none';
         filledAddress = true;
       }
-      if (address.value == '') {
+      else if (address.value == '') {
         addressError.style.display = 'block';
         filledAddress = false;
       }
